@@ -1,0 +1,157 @@
+.header {
+  width: 100%;
+  position: fixed;
+  padding: 25px 0;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background: #333333;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    @include text(700, 18px, 22px);
+    color: white;
+  }
+  &__list {
+    display: flex;
+    column-gap: 20px;
+  }
+  &__link {
+    @include text(700, 14px, 17px);
+    color: white;
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    select {
+      cursor: pointer;
+    }
+    option {
+      color: #FFFFFF;
+    }
+  }
+
+  &__btn {
+    background: transparent;
+    border: 1px solid white;
+    height: 40px;
+    padding: 0 29px;
+    border-radius: 6px;
+    cursor: pointer;
+    @include text(400, 14px, 17px);
+    transition: .3s;
+    color: white;
+    &:hover {
+      background: white;
+      color: #ED4C5C;
+      transition: .3s;
+    }
+  }
+}
+
+.mobile-btn{
+  width: 55px;
+  height: 45px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: #ED4C5C;
+  border-radius: 8px;
+  &__span{
+    height: 3px;
+    width: 60%;
+    background-color: white;
+    position: relative;
+
+    &::before, &::after{
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      position: absolute;
+    }
+    &::before{
+      top: -10px;
+    }
+    &::after{
+      top: 10px;
+    }
+  }
+}
+
+
+
+@media (max-width: 841px) {
+  .header__nav {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .mobile-btn {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 50;
+    display: flex;
+    cursor: pointer;
+    transition: .6s;
+  }
+  .show-mobile-btn span {
+    background: transparent;
+  }
+  .show-mobile-btn span::before,
+  .show-mobile-btn span::after {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 5;
+  }
+  .show-mobile-btn span::before {
+    transform: rotate(45deg);
+    transition: .6s;
+  }
+  .show-mobile-btn span::after {
+    transform: rotate(-45deg);
+    transition: .6s;
+  }
+  .header__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    height: 50%;
+    width: 100%;
+    position: fixed;
+    //top: 0;
+    background: #ED4C5C;
+    top: -100%;
+    transition: 1.3s;
+  }
+  .show-header__menu {
+    transition: 1.3s;
+    top: 0;
+    z-index: 5;
+
+  }
+}
+
+@media (max-width: 426px) {
+  .header__link{
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 320px) {
+  .mobile-btn {
+    width: 45px;
+    height: 36px;
+  }
+  .mobile-btn__span {
+    width: 50%;
+  }
+}
