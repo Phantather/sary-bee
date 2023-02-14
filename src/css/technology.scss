@@ -20,7 +20,7 @@
     }
     &.seo {
       width: calc(33.33333% - 33.333333px);
-      margin: 0 auto;
+      margin: 0 auto 30px;
     }
     &-title{
       @include text(700, 18px, 22px);
@@ -40,13 +40,24 @@
   }
 }
 
+@media (max-width: 768px) {
+  .technology__card {
+    &.seo {
+      width: calc(50% - 25px);
+    }
+  }
+}
 
 @media  (max-width: 641px) {
   .technology__row {
     flex-wrap: wrap;
+    row-gap: 30px;
   }
   .technology__card {
-    width: calc(50% - 25px);
+    width: 100%;
+    &.seo {
+      width: 100%;
+    }
   }
 }
 

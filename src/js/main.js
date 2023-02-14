@@ -43,5 +43,31 @@ var swiper = new Swiper(".mySwiper", {
     autoplay:{
         delay: 2000
     },
-    speed: 1500
+    speed: 1500,
+    breakpoints: {
+        1200: {
+            slidesPerView: 3
+        },
+        768: {
+            slidesPerView: 2
+        },
+        676: {
+          slidesPerView: 2
+        },
+        641: {
+            slidesPerView: 1
+        },
+        576: {
+            slidesPerView: 1
+        },
+        425: {
+            slidesPerView: 1
+        },
+        375: {
+            slidesPerView: 1
+        },
+        320: {
+            slidesPerView: 1
+        }
+    }
 });
