@@ -41,7 +41,7 @@
   &__author {
     margin-top: 60px;
     padding: 15px 0;
-    background-color: #333333;
+    background-color: #013765;
     text-align: center;
     @include text(400, 12px, 25px);
     letter-spacing: 0.05em;
@@ -57,5 +57,11 @@
   }
   .footer__info {
     width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 375px) {
+  .footer__title {
+    font-size: 15px;
   }
 }
