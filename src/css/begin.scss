@@ -59,6 +59,10 @@
   }
 }
 @media (max-width: 676px) {
+  .begin {
+    padding: 270px 0 187px;
+    background: url("../images/begin/back2.jpg") center/cover no-repeat;
+  }
   .begin__title {
     font-size: 44px;
     line-height: 60px;
@@ -78,10 +82,6 @@
 }
 
 @media (max-width: 500px) {
-  .begin {
-    padding: 270px 0 187px;
-    background: url("../images/begin/back2.jpg") center/cover no-repeat;
-  }
   .begin__title {
     font-size: 33px;
   }
