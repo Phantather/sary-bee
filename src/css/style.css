@@ -479,6 +479,7 @@ html {
   position: relative;
 }
 .features .acc-tow .features__info-title {
+  text-align: center;
   font-size: 16px;
 }
 .features .acc-list {
@@ -517,7 +518,7 @@ html {
     width: 360px;
   }
   .features__info-title {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 @media (max-width: 768px) {
@@ -536,7 +537,7 @@ html {
     width: 100%;
   }
   .features__info {
-    width: 70%;
+    width: 100%;
   }
   .features__info {
     position: relative;

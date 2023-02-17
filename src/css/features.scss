@@ -80,6 +80,7 @@
       padding: 20px;
       position: relative;
       &-title {
+        text-align: center;
         font-size: 16px;
       }
     }
@@ -122,7 +123,7 @@
     width: 360px;
   }
   .features__info-title {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 
@@ -146,7 +147,7 @@
     width: 100%;
   }
   .features__info {
-    width: 70%;
+    width: 100%;
   }
   .features__info {
     position: relative;
