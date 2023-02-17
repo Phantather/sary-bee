@@ -182,8 +182,8 @@ html {
   }
 }
 .begin {
-  padding: 270px 0 187px;
-  background: url("https://sputnik.kg/img/104588/41/1045884115_0:178:2400:1528_1920x0_80_0_0_d2a66b0cd8d1d7d702b135dc8228d0a2.jpg") center/cover no-repeat fixed;
+  padding: 300px 0 187px;
+  background: url("../images/begin/back.jpg") center/cover no-repeat;
   position: relative;
 }
 .begin::before {
@@ -262,6 +262,10 @@ html {
   }
 }
 @media (max-width: 500px) {
+  .begin {
+    padding: 270px 0 187px;
+    background: url("../images/begin/back.jpg") center/cover no-repeat;
+  }
   .begin__title {
     font-size: 33px;
   }
