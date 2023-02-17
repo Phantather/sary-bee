@@ -59,15 +59,16 @@
   }
   .acc {
     //width: calc(33.33333% - 20px);
-    .features__info {
-      width: 300px;
-    }
+    //.features__info {
+    //  width: 300px;
+    //}
   }
   .acc-tow {
     justify-content: center;
     display: none;
     &.active {
       display: flex;
+      row-gap: 120px;
     }
   }
   .acc-list {
